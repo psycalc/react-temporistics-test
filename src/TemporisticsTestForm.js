@@ -65,18 +65,28 @@ function TemporisticsTestForm() {
             component = (
                 <OptionsTest
                     options={question.options}
-                    onSelect={(answer) =>
-                        setAnswers((prevAnswers) => [...prevAnswers, answer])
-                    }
+                    onSelect={(answer) => {
+                        setAnswers((prevAnswers) => [...prevAnswers, answer]);
+                        if (currentStep === questions.length - 1) {
+                            handleSubmit();
+                        } else {
+                            handleNext();
+                        }
+                    }}
                 />
             );
             break;
         case 'text':
             component = (
                 <TextTest
-                    onSubmit={(answer) =>
-                        setAnswers((prevAnswers) => [...prevAnswers, answer])
-                    }
+                    onSubmit={(answer) => {
+                        setAnswers((prevAnswers) => [...prevAnswers, answer]);
+                        if (currentStep === questions.length - 1) {
+                            handleSubmit();
+                        } else {
+                            handleNext();
+                        }
+                    }}
                 />
             );
             break;
