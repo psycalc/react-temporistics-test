@@ -8,6 +8,7 @@ import RadioMatrixTest from './customComponents/RadioMatrixTest';
 import TextTest from './customComponents/TextTest';
 import Results from './customComponents/Results';
 import Timer from './customComponents/Timer';
+import Center from './customComponents/Center';
 
 function TemporisticsTestForm() {
     const [currentStep, setCurrentStep] = React.useState(0);
@@ -100,7 +101,7 @@ function TemporisticsTestForm() {
     }
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <Center>
             <Timer duration={60} />
             <Form style={{ width: '50%', fontSize: '1.2rem' }}>
                 <Form.Label>{question.label}</Form.Label>
@@ -120,7 +121,7 @@ function TemporisticsTestForm() {
                     )}
                 </div>
             </Form>
-        </div>
+        </Center>
     );
 }
 

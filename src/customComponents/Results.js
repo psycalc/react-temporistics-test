@@ -1,5 +1,6 @@
+import Center from "./Center";
 function Results() {
-    return <div>Тут будуть результати тесту</div>;
+    return <Center><div>Тут будуть результати тесту</div></Center>;
 }
 
 export default Results;
