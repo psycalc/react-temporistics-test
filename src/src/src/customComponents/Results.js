@@ -121,6 +121,7 @@ function Results({ answers }) {
               {answer.choice} ({answer.masks.join(", ")}) - {answer.weight}
             </li>
           ))}
+          {console.log(answers)}
         </ul>
       </div>
     </Center>
