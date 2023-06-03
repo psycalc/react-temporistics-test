@@ -9,7 +9,6 @@ import TextTest from './customComponents/TextTest';
 import Results from './customComponents/Results';
 import Timer from './customComponents/Timer';
 import Center from './customComponents/Center';
-import TestProgressBar from './customComponents/ProgressBar';
 
 function TemporisticsTestForm() {
     const [currentStep, setCurrentStep] = React.useState(0);
@@ -115,7 +114,6 @@ function TemporisticsTestForm() {
         <Center>
             <Timer duration={60} />
             <Form style={{ width: '50%', fontSize: '1.2rem' }}>
-                <TestProgressBar currentStep={currentStep} totalSteps={questions.length} />
                 <Form.Label>{question.label}</Form.Label>
                 {component}
                 <div className="d-flex justify-content-between">
