@@ -5,16 +5,16 @@ import { calculateResult, calculateTypesWeights } from "./resultsLogic";
 
 function Results({ answers }) {
 
-  // розрахунок результатів
+  // calculation of results
   let result = calculateResult(answers);
 
-  // додавання логіки розрахунку результатів
+  // adding calculation logic
   const { typesWeights, total_weight } = calculateTypesWeights(
     answers,
     typenames
   );
 
-  // сортування результатів
+  // sorting results
   let sorted_result = [];
 
   for (let i = 0; i < typesWeights.length; i++)
@@ -29,33 +29,33 @@ function Results({ answers }) {
     navigate("/description-page", { state: { selectedItem: item } });
   };
 
-  // виведення результату
+  // result display
   return (
     <Center>
-      <div>Результат тесту: {result}</div>
-      <div>Типи та їх ваги:</div>
+      <div>Test result: {result}</div>
+      <div>Types and their weights:</div>
       <ul>
         {sorted_result.map((item, index) => (
-          <li key={index}>
+          <li key={index} style={{ display: 'flex', alignItems: 'center' }}>
             {item.name}: {item.weight}
             <span style={{ fontSize: "80%", marginLeft: "10px" }}>
               {total_weight !== 0
                 ? `(${Math.round((item.weight / total_weight) * 100)}%)`
                 : ""}
             </span>
-            <button onClick={() => handleMoreClick(item)}>More</button>
+            <button onClick={() => handleMoreClick(item)} style={{ marginLeft: "10px" }}>More</button>
           </li>
         ))}
       </ul>
       <div>
-        Передбачуваний тип:{" "}
+        Predicted type:{" "}
         <span style={{ fontWeight: "bold" }}>{sorted_result[0].name}</span>
       </div>
       <div>Typenames: {typenames.join(", ")}</div>
       <div>TypesWeights: {typesWeights.join(", ")}</div>
       <div>Total weight: {total_weight}</div>
       <div>
-        Вибрані варіанти:
+        Selected options:
         <ul>
           {answers.map((answer, index) => (
             <li key={index}>

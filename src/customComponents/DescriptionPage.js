@@ -10,7 +10,7 @@ function DescriptionPage() {
     const selectedItem = location?.state?.selectedItem;
 
     const goBack = () => {
-        navigate('/'); // navigates back to the main page
+        navigate('/results'); // navigates back to the results page
     };
 
     if (!selectedItem) {
@@ -31,7 +31,7 @@ function DescriptionPage() {
                     return <li key={position}>{letterPosition ? letterPosition.description : ''}</li>;
                 })}
             </ul>
-            <Button onClick={goBack}>Back to Main Page</Button>
+            <Button onClick={goBack}>Back to Results Page</Button>
         </div>
     );
 }

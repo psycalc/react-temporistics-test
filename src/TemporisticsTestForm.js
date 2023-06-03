@@ -10,12 +10,15 @@ import Results from './customComponents/Results';
 import Timer from './customComponents/Timer';
 import Center from './customComponents/Center';
 import TestProgressBar from './customComponents/ProgressBar';
+import { useNavigate } from 'react-router-dom';
 
 function TemporisticsTestForm() {
     const [currentStep, setCurrentStep] = React.useState(0);
     const [questions, setQuestions] = React.useState([]);
     const [answers, setAnswers] = React.useState([]);
     const [showResults, setShowResults] = React.useState(false);
+    const navigate = useNavigate();
+
 
     React.useEffect(() => {
         fetch('/questions.json')
@@ -47,7 +50,8 @@ function TemporisticsTestForm() {
     const handleSubmit = () => {
         // перевірка правильності відповідей
         // ...
-        setShowResults(true);
+        // setShowResults(true);
+        navigate('/results');
     };
 
     if (questions.length === 0) {
