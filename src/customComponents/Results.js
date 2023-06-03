@@ -64,8 +64,8 @@ function Results({ answers }) {
 
   const navigate = useNavigate();
 
-  const handleMoreClick = () => {
-    navigate('/description-page');
+  const handleMoreClick = (item) => {
+    navigate('/description-page', { state: { selectedItem: item } });
   };
 
   // виведення результату
@@ -80,6 +80,7 @@ function Results({ answers }) {
             <span style={{ fontSize: "80%", marginLeft: "10px" }}>
               {total_weight !== 0 ? `(${Math.round((item.weight / total_weight) * 100)}%)` : ''}
             </span>
+            <button onClick={() => handleMoreClick(item)}>More</button>
           </li>
         ))}
       </ul>
@@ -107,8 +108,8 @@ function Results({ answers }) {
           {console.log(answers)}
         </ul>
       </div>
-      <button onClick={handleMoreClick}>More</button>
     </Center>
+
 
   );
 }
