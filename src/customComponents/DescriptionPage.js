@@ -1,7 +1,10 @@
 import React from 'react';
 import { letterPositions } from './letterPositions';
+import { useLocation } from 'react-router-dom';
 
-function DescriptionPage({ location }) {
+function DescriptionPage() {
+    const location = useLocation();
+    console.log(location.state); // log the state to check what's being received
     const selectedItem = location?.state?.selectedItem;
 
     if (!selectedItem) {
@@ -19,12 +22,11 @@ function DescriptionPage({ location }) {
                     const letterPosition = letterPositions.find(
                         (lp) => lp.letter === letter && lp.position === position + 1
                     );
-                    return <li key={position}>{letterPosition.description}</li>;
+                    return <li key={position}>{letterPosition ? letterPosition.description : ''}</li>;
                 })}
             </ul>
         </div>
     );
 }
-
 
 export default DescriptionPage;

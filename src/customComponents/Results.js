@@ -25,6 +25,7 @@ function Results({ answers }) {
   const navigate = useNavigate();
 
   const handleMoreClick = item => {
+    console.log(item); // log the item to ensure it's not undefined or null
     navigate("/description-page", { state: { selectedItem: item } });
   };
 
