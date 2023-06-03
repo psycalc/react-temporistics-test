@@ -1,11 +1,17 @@
 import React from 'react';
 import { letterPositions } from './letterPositions';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 function DescriptionPage() {
     const location = useLocation();
+    const navigate = useNavigate();
     console.log(location.state); // log the state to check what's being received
     const selectedItem = location?.state?.selectedItem;
+
+    const goBack = () => {
+        navigate('/'); // navigates back to the main page
+    };
 
     if (!selectedItem) {
         return <div>Selected item not found</div>;
@@ -25,6 +31,7 @@ function DescriptionPage() {
                     return <li key={position}>{letterPosition ? letterPosition.description : ''}</li>;
                 })}
             </ul>
+            <Button onClick={goBack}>Back to Main Page</Button>
         </div>
     );
 }

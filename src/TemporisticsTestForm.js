@@ -60,55 +60,36 @@ function TemporisticsTestForm() {
 
     const question = questions[currentStep];
 
-    let component;
-    switch (question.type) {
-        case 'options':
-            component = (
-                <OptionsTest
-                    options={question.options}
-                    onSelect={(answer) => {
-                        setAnswers((prevAnswers) => [...prevAnswers, answer]);
-                        if (currentStep === questions.length - 1) {
-                            handleSubmit();
-                        } else {
-                            handleNext();
-                        }
-                    }}
-                />
-            );
-            break;
-        case 'text':
-            component = (
-                <TextTest
-                    onSubmit={(answer) => {
-                        setAnswers((prevAnswers) => [...prevAnswers, answer]);
-                        if (currentStep === questions.length - 1) {
-                            handleSubmit();
-                        } else {
-                            handleNext();
-                        }
-                    }}
-                />
-            );
-            break;
-        case 'audio':
-            component = <AudioTest />;
-            break;
-        case 'image':
-            component = <ImageTest />;
-            break;
-        case 'radio-matrix':
-            component = (
-                <RadioMatrixTest rows={question.rows} cols={question.cols} />
-            );
-            break;
-        case 'checkbox-matrix':
-            component = (
-                <CheckboxMatrixTest rows={question.rows} cols={question.cols} />
-            );
-            break;
-        default:
-            component = null;
+    const questionComponents = {
+        options: OptionsTest,
+        text: TextTest,
+        audio: AudioTest,
+        image: ImageTest,
+        'radio-matrix': RadioMatrixTest,
+        'checkbox-matrix': CheckboxMatrixTest,
+    };
+
+    const QuestionComponent = questionComponents[question.type];
+
+    const handleAnswer = (answer) => {
+        setAnswers((prevAnswers) => [...prevAnswers, answer]);
+        if (currentStep === questions.length - 1) {
+            handleSubmit();
+        } else {
+            handleNext();
+        }
+    };
+
+    const componentProps = {
+        options: { options: question.options, onSelect: handleAnswer },
+        text: { onSubmit: handleAnswer },
+        'radio-matrix': { rows: question.rows, cols: question.cols },
+        'checkbox-matrix': { rows: question.rows, cols: question.cols },
+    };
+
+    let component = null;
+    if (QuestionComponent) {
+        component = <QuestionComponent {...componentProps[question.type]} />;
     }
 
     return (
