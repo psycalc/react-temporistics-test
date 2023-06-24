@@ -90,4 +90,5 @@ for lang in popular_languages.values():
             translated_question['options'] = translated_options
 
             translated_data.append(translated_question)
-            time.sleep(1)  # Add a delay between
+            time.sleep(1)  # Add a delay between each translation to avoid overwhelming the translation service
+        json.dump(translated_data, f, ensure_ascii=False, indent=4)
