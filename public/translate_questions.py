@@ -1,5 +1,6 @@
 import json
 from googletrans import Translator
+import time
 
 # Define the 100 most popular languages
 popular_languages = {
@@ -39,8 +40,7 @@ popular_languages = {
     'hungarian': 'hu',
 }
 
-
-translator = Translator(service_urls=['translate.google.com'])
+translator = Translator(service_urls=['translate.google.com'], timeout=5)  # Set the timeout value in seconds
 
 # Open the questions.json file and load the content
 with open('questions.json', 'r') as f:
@@ -76,4 +76,5 @@ for lang in popular_languages.values():
             translated_question['options'] = translated_options
 
             translated_data.append(translated_question)
+            time.sleep(1)  # Add a delay between each translation to avoid overwhelming the translation service
         json.dump(translated_data, f, ensure_ascii=False, indent=4)
