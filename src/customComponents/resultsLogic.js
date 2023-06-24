@@ -1,4 +1,8 @@
 export function calculateResult(answers) {
+  if (!answers) {
+    console.error('Answers is undefined');
+    return 0;
+  }
     let result = 0;
     for (let i = 0; i < answers.length; i++) {
       result += answers[i].weight;
@@ -7,19 +11,23 @@ export function calculateResult(answers) {
   }
   
   export function calculateTypesWeights(answers, typenames) {
+    if (!answers) {
+      console.error('Answers is undefined');
+      return { typesWeights: [], total_weight: 0 };
+    }
     let typesWeights = typenames.map(() => 0);
     let total_weight = 0;
-  
+    
     for (let i = 0; i < answers.length; i++) {
       let masks = answers[i].masks;
       let weight = answers[i].weight;
       let subResults = new Array(typenames.length).fill(0);
-  
+    
       for (let n = 0; n < masks.length; n++) {
         let types = mask_match(masks[n], typenames);
         for (let j = 0; j < types.length; j++) subResults[types[j]] = 1;
       }
-  
+    
       for (let k = 0; k < subResults.length; k++) {
         typesWeights[k] += subResults[k] * weight;
         if (subResults[k] === 1) {
@@ -27,9 +35,10 @@ export function calculateResult(answers) {
         }
       }
     }
-  
+    
     return { typesWeights, total_weight };
   }
+  
   
   function mask_match(mask, typenames) {
     let inverse = false;
