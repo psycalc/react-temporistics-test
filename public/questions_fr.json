@@ -1,0 +1,92 @@
+[
+    {
+        "type": "options",
+        "label": "Le temps mettra tout en place",
+        "options": {
+            "Au contraire, oui": {
+                "weight": 1.5,
+                "masks": []
+            },
+            "Je ne sais pas / pas important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablement pas": {
+                "weight": -1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Je ne peux pas dire que je suis heureux (a)",
+        "options": {
+            "Au contraire, oui": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Je ne sais pas / pas important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablement pas": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Je ne peux pas dire que je suis satisfait (a)",
+        "options": {
+            "Au contraire, oui": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Je ne sais pas / pas important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablement pas": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Je ne peux pas dire que je suis satisfait (a)",
+        "options": {
+            "Au contraire, oui": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Je ne sais pas / pas important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablement pas": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Je ne peux pas dire que je suis du plaisir",
+        "options": {
+            "Au contraire, oui": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Je ne sais pas / pas important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablement pas": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    }
+]

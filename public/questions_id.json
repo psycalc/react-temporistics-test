@@ -1,0 +1,92 @@
+[
+    {
+        "type": "options",
+        "label": "Waktu akan menempatkan semuanya di tempat",
+        "options": {
+            "Sebaliknya, ya": {
+                "weight": 1.5,
+                "masks": []
+            },
+            "Saya tidak tahu/tidak penting": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Mungkin tidak": {
+                "weight": -1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Saya tidak bisa mengatakan bahwa saya bahagia (a)",
+        "options": {
+            "Sebaliknya, ya": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Saya tidak tahu/tidak penting": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Mungkin tidak": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Saya tidak bisa mengatakan bahwa saya puas (a)",
+        "options": {
+            "Sebaliknya, ya": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Saya tidak tahu/tidak penting": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Mungkin tidak": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Saya tidak bisa mengatakan bahwa saya puas (a)",
+        "options": {
+            "Sebaliknya, ya": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Saya tidak tahu/tidak penting": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Mungkin tidak": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Saya tidak bisa mengatakan bahwa saya senang",
+        "options": {
+            "Sebaliknya, ya": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Saya tidak tahu/tidak penting": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Mungkin tidak": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    }
+]

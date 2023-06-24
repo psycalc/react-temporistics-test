@@ -1,0 +1,92 @@
+[
+    {
+        "type": "options",
+        "label": "Time will put everything in place",
+        "options": {
+            "Rather, yes": {
+                "weight": 1.5,
+                "masks": []
+            },
+            "I don't know/not important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probably not": {
+                "weight": -1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "I can't say that I'm happy (a)",
+        "options": {
+            "Rather, yes": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "I don't know/not important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probably not": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "I can't say that I am satisfied (a)",
+        "options": {
+            "Rather, yes": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "I don't know/not important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probably not": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "I can't say that I am satisfied (a)",
+        "options": {
+            "Rather, yes": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "I don't know/not important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probably not": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "I can't say that I am pleasure",
+        "options": {
+            "Rather, yes": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "I don't know/not important": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probably not": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    }
+]

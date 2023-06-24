@@ -1,0 +1,92 @@
+[
+    {
+        "type": "options",
+        "label": "O tempo vai colocar tudo no lugar",
+        "options": {
+            "Em vez disso, sim": {
+                "weight": 1.5,
+                "masks": []
+            },
+            "Eu não sei/não é importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Provavelmente não": {
+                "weight": -1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Não posso dizer que estou feliz (a)",
+        "options": {
+            "Em vez disso, sim": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Eu não sei/não é importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Provavelmente não": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Não posso dizer que estou satisfeito (a)",
+        "options": {
+            "Em vez disso, sim": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Eu não sei/não é importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Provavelmente não": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Não posso dizer que estou satisfeito (a)",
+        "options": {
+            "Em vez disso, sim": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Eu não sei/não é importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Provavelmente não": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "Não posso dizer que sou prazer",
+        "options": {
+            "Em vez disso, sim": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "Eu não sei/não é importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Provavelmente não": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    }
+]

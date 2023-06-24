@@ -1,0 +1,92 @@
+[
+    {
+        "type": "options",
+        "label": "时间将把一切都安装在适当的地方",
+        "options": {
+            "是的，是的": {
+                "weight": 1.5,
+                "masks": []
+            },
+            "我不知道/不重要": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "可能不会": {
+                "weight": -1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "我不能说我很高兴（a）",
+        "options": {
+            "是的，是的": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "我不知道/不重要": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "可能不会": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "我不能说我很满意（a）",
+        "options": {
+            "是的，是的": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "我不知道/不重要": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "可能不会": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "我不能说我很满意（a）",
+        "options": {
+            "是的，是的": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "我不知道/不重要": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "可能不会": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "我不能说我很高兴",
+        "options": {
+            "是的，是的": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "我不知道/不重要": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "可能不会": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    }
+]

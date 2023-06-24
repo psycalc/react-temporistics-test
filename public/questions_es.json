@@ -1,0 +1,92 @@
+[
+    {
+        "type": "options",
+        "label": "El tiempo pondrá todo en su lugar",
+        "options": {
+            "Más bien, si": {
+                "weight": 1.5,
+                "masks": []
+            },
+            "No conozco/no es importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablemente no": {
+                "weight": -1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "No puedo decir que soy feliz (a)",
+        "options": {
+            "Más bien, si": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "No conozco/no es importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablemente no": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "No puedo decir que estoy satisfecho (a)",
+        "options": {
+            "Más bien, si": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "No conozco/no es importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablemente no": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "No puedo decir que estoy satisfecho (a)",
+        "options": {
+            "Más bien, si": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "No conozco/no es importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablemente no": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    },
+    {
+        "type": "options",
+        "label": "No puedo decir que soy placer",
+        "options": {
+            "Más bien, si": {
+                "weight": -1.5,
+                "masks": []
+            },
+            "No conozco/no es importante": {
+                "weight": 0.5,
+                "masks": []
+            },
+            "Probablemente no": {
+                "weight": 1.5,
+                "masks": []
+            }
+        }
+    }
+]
