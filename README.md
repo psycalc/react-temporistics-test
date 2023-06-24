@@ -1,27 +1,27 @@
-# Назва проекту
+# Project Name
 
-Опис проекту: Цей проект - це тестовий додаток для перевірки ідеї знаходження сумісних людей на карті. Він використовує типологію темпористики для визначення сумісності між людьми на стратегічному рівні.
+Project Description: This project is a test application to validate the idea of finding compatible people on a map. It utilizes the concept of temporistics to determine compatibility between individuals on a strategic level.
 
-## Встановлення
+## Installation
 
-1. Клонуйте репозиторій: `git clone <URL>`
-2. Встановіть залежності: `npm install`
-3. Запустіть проект: `npm start`
+1. Clone the repository: `git clone <URL>`
+2. Install dependencies: `npm install`
+3. Run the project: `npm start`
 
-## Використання
+## Usage
 
-1. Відкрийте додаток у браузері.
-2. Пройдіть тестування, щоб визначити свій тип.
-3. Перегляньте свої результати та список сумісних людей на карті.
+1. Open the application in a browser.
+2. Take the test to determine your type.
+3. View your results and the list of compatible people on the map.
 
-## Контрибуція
+## Contribution
 
-Якщо ви хочете зробити внесок у цей проект, будь ласка, зробіть наступне:
+If you would like to contribute to this project, please follow these steps:
 
-1. Створіть форк репозиторію.
-2. Зробіть зміни у своєму форку.
-3. Надішліть запит на злиття до основного репозиторію.
+1. Fork the repository.
+2. Make changes in your fork.
+3. Submit a pull request to the main repository.
 
-## Ліцензія
+## License
 
-Цей проект ліцензований за ліцензією MIT.
+This project is licensed under the MIT License.
