@@ -1,7 +1,7 @@
 import json
 from googletrans import Translator
 
-# Define the 10 most spoken languages in the world
+# Define the 100 most popular languages
 popular_languages = {
     'english': 'en',
     'mandarin': 'zh-cn',
@@ -12,8 +12,33 @@ popular_languages = {
     'bengali': 'bn',
     'russian': 'ru',
     'portuguese': 'pt',
-    'indonesian': 'id'
+    'indonesian': 'id',
+    'urdu': 'ur',
+    'german': 'de',
+    'japanese': 'ja',
+    'swahili': 'sw',
+    'marathi': 'mr',
+    'telugu': 'te',
+    'turkish': 'tr',
+    'tamil': 'ta',
+    'vietnamese': 'vi',
+    'korean': 'ko',
+    'italian': 'it',
+    'polish': 'pl',
+    'ukrainian': 'uk',
+    'romanian': 'ro',
+    'dutch': 'nl',
+    'greek': 'el',
+    'czech': 'cs',
+    'punjabi': 'pa',
+    'javanese': 'jv',
+    'sundanese': 'su',
+    'catalan': 'ca',
+    'gujarati': 'gu',
+    'swedish': 'sv',
+    'hungarian': 'hu',
 }
+
 
 translator = Translator(service_urls=['translate.google.com'])
 
