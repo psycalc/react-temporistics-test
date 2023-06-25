@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "age": 30,
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "distance": 5,
+    "temporisticsType": "Type A"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "age": 25,
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "distance": 10,
+    "temporisticsType": "Type B"
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "age": 40,
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "distance": 15,
+    "temporisticsType": "Type C"
+  }
+]

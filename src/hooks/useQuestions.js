@@ -7,24 +7,24 @@ const useQuestions = () => {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    setLoading(true);
-    setError(null);
-    setQuestions([]);
+    const fetchQuestions = async () => {
+      setLoading(true);
+      setError(null);
+      setQuestions([]);
 
-    const language = i18n.language;
-    const questionsFile = `questions_${language}.json`;
-
-    fetch(questionsFile)
-      .then((response) => response.json())
-      .then((data) => {
+      try {
+        const response = await fetch(`/api/questions/${i18n.language}`);
+        const data = await response.json();
         setQuestions(data);
-        setLoading(false);
-      })
-      .catch((error) => {
+      } catch (error) {
         setError(error);
+      } finally {
         setLoading(false);
-      });
-  }, [i18n.language]);
+      }
+    };
+
+    fetchQuestions();
+  }, []);
 
   return { loading, error, questions };
 };
