@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import i18n from 'i18next';
 
 const useQuestions = () => {
   const [loading, setLoading] = useState(true);
@@ -6,23 +7,24 @@ const useQuestions = () => {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    const fetchQuestions = async () => {
-      try {
-        const response = await fetch('/questions.json');
-        if (!response.ok) {
-          throw new Error(`An error occurred: ${response.status}`);
-        }
-        const data = await response.json();
+    setLoading(true);
+    setError(null);
+    setQuestions([]);
+
+    const language = i18n.language;
+    const questionsFile = `questions_${language}.json`;
+
+    fetch(questionsFile)
+      .then((response) => response.json())
+      .then((data) => {
         setQuestions(data);
         setLoading(false);
-      } catch (error) {
-        console.error(error);
-        setError(error.message);
+      })
+      .catch((error) => {
+        setError(error);
         setLoading(false);
-      }
-    };
-    fetchQuestions();
-  }, []);
+      });
+  }, [i18n.language]);
 
   return { loading, error, questions };
 };
