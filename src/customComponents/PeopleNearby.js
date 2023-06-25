@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import mockPeople from './mockData/mockPeople.json';
+import mockPeople from './mock.json';
 
 const PeopleNearby = () => {
   const [loading, setLoading] = useState(true);
